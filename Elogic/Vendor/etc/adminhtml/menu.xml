@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Elogic.
+ * 2020.09.22
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Elogic_Vendor::vendors_head" title="Vendors" module="Elogic_Vendor" sortOrder="20" resource="Elogic_Vendor::vendors_head" />
+        <add id="Elogic_Vendor::vendor_add" title="Add vendor" module="Elogic_Vendor" sortOrder="1" parent="Elogic_Vendor::vendors_head" action="vendor/vendors/add" resource="Elogic_Vendor::vendors" />
+        <add id="Elogic_Vendor::vendors" title="Vendors list" module="Elogic_Vendor" sortOrder="2" parent="Elogic_Vendor::vendors_head" action="vendor/vendors" resource="Elogic_Vendor::vendors" />
+    </menu>
+</config>
